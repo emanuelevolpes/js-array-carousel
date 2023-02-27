@@ -14,3 +14,26 @@ for (let i = 0; i < images.length; i++) {
 
 carousel.innerHTML += imagesContent;
 document.querySelector('.image').classList.add('show');
+
+const up = document.querySelector('.up');
+const down = document.querySelector('.down');
+
+const image = document.querySelectorAll('.image');
+
+up.addEventListener('click', function() {
+    if (active > 0) {
+        console.log('decremento active');
+        image[active].classList.remove('show');
+        active--;
+        image[active].classList.add('show');
+    }
+});
+
+down.addEventListener('click', function() {
+    if (active < image.length - 1) {
+        console.log('incremento active');
+        image[active].classList.remove('show');
+        active++;
+        image[active].classList.add('show');
+    }
+});
