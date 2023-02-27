@@ -33,9 +33,19 @@ COMMON
     width: 700px;
     height: 300px;
     position: relative;
+    background-color: aqua;
 }
 
-.carousel .image > img {
+.image {
+    height: 100%;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.image > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -48,9 +58,10 @@ COMMON
     line-height: 50%;
     position: absolute;
     left: 50%;
-    transform: translate(0, -50%);
+    transform: translate(-50%, 0);
     z-index: 1;
     padding: 5px;
+    cursor: pointer;
 }
 
 .carousel .up {
@@ -58,5 +69,5 @@ COMMON
 }
 
 .carousel .down {
-    bottom: -20px; 
+    bottom: 20px; 
 }
