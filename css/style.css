@@ -16,10 +16,6 @@ COMMON
 ----------
 */
 
- body {
-    background-color: pink
- }
-
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -33,7 +29,6 @@ COMMON
     width: 700px;
     height: 300px;
     position: relative;
-    background-color: aqua;
 }
 
 .image {
